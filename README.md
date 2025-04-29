@@ -36,6 +36,7 @@ The **Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Pr
 Clone the repository to your local machine using the following command:
 
 git clone https://github.com/LakshmanJ24/Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Products.git
+
 cd Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Products
 
 ### ✅ Step 2: Install Python Dependencies

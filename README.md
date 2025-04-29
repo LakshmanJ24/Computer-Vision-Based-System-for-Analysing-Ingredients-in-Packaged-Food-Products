@@ -35,15 +35,15 @@ The **Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Pr
 
 Clone the repository to your local machine using the following command:
 
-```bash
 git clone https://github.com/LakshmanJ24/Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Products.git
 cd Computer-Vision-Based-System-for-Analysing-Ingredients-in-Packaged-Food-Products
-✅ Step 2: Install Python Dependencies
+
+### ✅ Step 2: Install Python Dependencies
 Make sure you have Python 3.7+ installed. Then, install the required dependencies:
 
 pip install -r requirements.txt
 
-✅ Step 3: Install Tesseract OCR Engine
+### ✅ Step 3: Install Tesseract OCR Engine
 To enable OCR functionality, you need to install the Tesseract OCR engine. Follow these steps:
 
 Download: Tesseract OCR
@@ -53,16 +53,18 @@ Install: Follow the installation instructions for your operating system.
 Set the Tesseract Path: Update the Tesseract path in the main.py file:
 
 pytesseract.pytesseract.tesseract_cmd = r"C:/Program Files/Tesseract-OCR/tesseract.exe"
-✅ Step 4: Add Input Data
+
+### ✅ Step 4: Add Input Data
 Place your ingredient label images in the assets/sample_images/ folder.
 
 Update or replace the ingredient_database.db with your own SQLite database containing ingredients and their corresponding allergens and patient recommendations.
 
-✅ Step 5: Run the Project
+### ✅ Step 5: Run the Project
 To run the project, execute the following command:
 
 python main.py
-🧑‍💻 Usage
+
+## 🧑‍💻 Usage
 Once you run the project, it will prompt you to enter the path of an ingredient image. The system will:
 
 Extract Text: Use OCR to extract text from the image.
@@ -77,7 +79,7 @@ Log Unmatched Data: Store any unmatched ingredients in a text file for further r
 
 Google Search: If there are common allergens or patient groups, it will search the web for more context.
 
-📊 Sample Database Schema
+## 📊 Sample Database Schema
 Your ingredient_database.db should have a table like the following:
 
 CREATE TABLE ingredients (
@@ -86,7 +88,8 @@ CREATE TABLE ingredients (
     allergen TEXT,
     patients_to_avoid TEXT
 );
-💾 Sample Output
+
+## 💾 Sample Output
 Example of matched allergens and patient recommendations:
 
 Extracted Ingredient: sodium chloride
@@ -104,21 +107,23 @@ Top 5 Google results for 'Why should people with calcium_disodium_edta allergy a
 2. [Link 2]
 3. [Link 3]
 ...
-🧪 Sample Log Output
+
+## 🧪 Sample Log Output
 Any unmatched ingredient will be logged in unmatched_data.txt:
 
 Unmatched Ingredient: sodium_benzoate
 Detected Words: sodium, benzoate
 Related Allergens Found Online: Preservatives
 Patient Recommendations: Avoid for asthmatic patients
-❗ Known Limitations
+
+## ❗ Known Limitations
 OCR Accuracy: OCR may struggle with poor-quality images or handwriting.
 
 Matching Sensitivity: The matching threshold for fuzzy matching (e.g., Jaccard similarity) may need tuning based on the dataset.
 
 Google Search Limitations: Google searches are limited by the number of queries you can make per day and may not always yield relevant results.
 
-🛠️ Future Improvements
+## 🛠️ Future Improvements
 Real-time OCR: Implement a real-time camera feed for ingredient extraction.
 
 Improved Matching Algorithm: Explore advanced NLP techniques to improve database matching.
@@ -127,9 +132,9 @@ Enhanced User Interface: Create a graphical user interface (GUI) for better user
 
 Cross-platform Support: Make the system compatible with macOS and Linux.
 
-🙌 Contributing
+## 🙌 Contributing
 Contributions, suggestions, and issues are welcome! Feel free to fork this repository and submit a pull request. When contributing, please ensure your code is well-documented and tested.
 
-📧 Contact
+## 📧 Contact
 Email: lakshmanj@karunya.edu.in
 GitHub: @LakshmanJ24
